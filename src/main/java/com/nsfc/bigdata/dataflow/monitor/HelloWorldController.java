@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController // 是 @ResponseBody 和 @Controller 的合并
+@RequestMapping("/root") //根目录
 public class HelloWorldController {
 
     @RequestMapping( value = "/helloWorld" , method = RequestMethod.GET)
